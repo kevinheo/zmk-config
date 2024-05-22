@@ -26,8 +26,6 @@
 &kp LEFT_ALT    &kp Z  &kp X  &kp C      &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
                               &kp LCTRL  &kp SPACE  &mo 1    &mo 2  &kp ENTER
             >;
-
-            trackball-bindings = <&tmv_coarse>;
         };
 
         Movement {
