@@ -50,8 +50,8 @@
         Firmware {
             label = "setting";
             bindings = <
-&out OUT_TOG  &trans  &trans  &trans      &trans      &bt BT_CLR_ALL    &bl BL_TOG  &trans      &trans      &trans  &trans  &to 0
-&trans        &trans  &trans  &bt BT_PRV  &bt BT_NXT  &trans            &trans      &bl BL_DEC  &bl BL_INC  &trans  &trans  &trans
+&out OUT_TOG  &trans  &trans  &trans      &trans      &bt BT_CLR_ALL    &trans  &trans      &trans      &trans  &trans  &to 0
+&trans        &trans  &trans  &bt BT_PRV  &bt BT_NXT  &trans            &trans      &trans  &trans  &trans  &trans  &trans
 &trans        &trans  &trans  &trans      &trans      &trans            &trans      &trans      &trans      &trans  &trans  &trans
                               &trans      &trans      &trans            &trans      &trans
             >;
