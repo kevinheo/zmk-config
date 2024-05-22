@@ -43,7 +43,7 @@
             layers = <0 2 1>;
         };
 
-        LClick {
+        LClickR {
             bindings = <&mkp MB1>;
             key-positions = <19 20>;
             timeout-ms = <100>;
@@ -57,22 +57,25 @@
             layers = <5>;
         };
 
-        RClick {
+        RClickR {
             bindings = <&mkp RCLK>;
-            key-positions = <32 33>;
+            key-positions = <32 31>;
             timeout-ms = <100>;
             layers = <5>;
         };
-    };
 
-    behaviors {
-        DoubleClick: DoubleClick {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLECLICK";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL>, <&kp LEFT_CONTROL>;
+        LClickL {
+            bindings = <&mkp MB1>;
+            key-positions = <16 15>;
+            timeout-ms = <100>;
+            layers = <5 0>;
+        };
 
-            tapping-term-ms = <100>;
+        RClickL {
+            bindings = <&mkp RCLK>;
+            key-positions = <27 28>;
+            timeout-ms = <100>;
+            layers = <5 0>;
         };
     };
 
@@ -133,10 +136,10 @@
 
         Mouse {
             bindings = <
-&trans     &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-                           &mkp LCLK  &trans  &mkp MB2    &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mkp MCLK  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
