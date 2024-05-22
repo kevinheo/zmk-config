@@ -12,6 +12,20 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        CtrlF5 {
+            bindings = <&kp LC(F5)>;
+            key-positions = <5 1>;
+        };
+
+        FirmwareMod {
+            bindings = <&to 3>;
+            key-positions = <0 24 11 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
