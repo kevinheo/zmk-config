@@ -16,14 +16,14 @@
         compatible = "zmk,combos";
 
         CtrlF5 {
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             bindings = <&kp LC(F5)>;
             key-positions = <1 5>;
             layers = <0>;
         };
 
         FirmwareMod {
-            timeout-ms = <50>;
+            timeout-ms = <300>;
             bindings = <&to 3>;
             key-positions = <0 24 11 35>;
             layers = <0>;
@@ -32,8 +32,36 @@
         AltF4 {
             bindings = <&kp LA(F4)>;
             key-positions = <24 29>;
-            timeout-ms = <50>;
+            timeout-ms = <200>;
             layers = <0>;
+        };
+
+        Delet {
+            bindings = <&kp DEL>;
+            key-positions = <10 11>;
+            timeout-ms = <100>;
+            layers = <0 2 1>;
+        };
+
+        LClick {
+            bindings = <&mkp MB1>;
+            key-positions = <19 20>;
+            timeout-ms = <100>;
+            layers = <5>;
+        };
+
+        MClick {
+            bindings = <&mkp MCLK>;
+            key-positions = <20 21>;
+            timeout-ms = <100>;
+            layers = <5>;
+        };
+
+        RClick {
+            bindings = <&mkp RCLK>;
+            key-positions = <32 33>;
+            timeout-ms = <100>;
+            layers = <5>;
         };
     };
 
@@ -44,7 +72,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL>, <&kp LEFT_CONTROL>;
 
-            tapping-term-ms = <30>;
+            tapping-term-ms = <100>;
         };
     };
 
@@ -66,10 +94,10 @@
         Movement {
             label = "left";
             bindings = <
-&trans    &kp HOME       &kp END         &kp UP_ARROW    &kp PAGE_UP      &kp PAGE_DOWN      &trans      &kp N7  &kp N8  &kp N9  &trans           &kp BACKSPACE
-&kp CLCK  &kp RIGHT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PRINTSCREEN    &kp SLASH   &kp N4  &kp N5  &kp N6  &kp PLUS         &kp DEL
-&kp LGUI  &trans         &trans          &kp LSHFT       &kp LEFT_ALT     &kp TAB            &kp MINUS   &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &kp ENTER
-                                         &trans          &kp SPACE        &trans             &kp KP_DOT  &kp N0
+&trans    &kp HOME       &kp END         &kp UP_ARROW    &kp PAGE_UP      &kp PAGE_DOWN          &kp PRINTSCREEN  &kp N7  &kp N8  &kp N9  &trans           &kp BACKSPACE
+&kp CLCK  &kp RIGHT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(PRINTSCREEN)    &kp SLASH        &kp N4  &kp N5  &kp N6  &kp PLUS         &kp DEL
+&trans    &kp LGUI       &trans          &kp LSHFT       &kp LEFT_ALT     &kp TAB                &kp MINUS        &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &kp ENTER
+                                         &trans          &kp SPACE        &trans                 &kp KP_DOT       &kp N0
             >;
         };
 
@@ -105,10 +133,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans     &trans  &trans     &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &mkp MCLK  &trans  &trans     &trans  &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans     &trans  &trans     &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
-                           &mkp LCLK  &trans  &trans    &trans  &trans
+&trans     &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&mkp MCLK  &trans  &trans  &trans     &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+                           &mkp LCLK  &trans  &mkp MB2    &trans  &trans
             >;
         };
     };
