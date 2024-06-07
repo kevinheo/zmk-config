@@ -134,7 +134,7 @@
         Firmware {
             label = "setting";
             bindings = <
-&out OUT_TOG  &none  &none  &none       &none       &bt BT_CLR    &bl BL_TOG   &none       &none       &none  &none  &to 0
+&out OUT_TOG  &none  &none  &none       &none       &bt BT_CLR_ALL    &bl BL_TOG   &none       &none       &none  &none  &to 0
 &none         &none  &none  &bt BT_PRV  &bt BT_NXT  &none         &none        &bl BL_DEC  &bl BL_INC  &none  &none  &none
 &none         &none  &none  &none       &none       &none         &bootloader  &none       &none       &none  &none  &none
                             &none       &none       &none         &none        &none
